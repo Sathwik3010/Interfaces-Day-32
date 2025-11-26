@@ -1,0 +1,69 @@
+definition:- specification to a set of classes
+
+definition 2:- any service requirement specification is called as an interface(SRS).
+
+definition 3:- contract between client and service provider is called as an interface
+
+definition 4:- inside interface every method is always abstract whether we are declaring or not . hence interface is consider as 100% pure abstract classes.
+
+summery definition 
+===================
+specification to a set of classes or any service requirement specification or contract between client and service provider or 100% pure abstract classes is considered as an interface.
+
+declaration and implementation of an interface 
+==============================================
+
+declaration interface-name {
+abstract methods;
+variables;
+
+}
+
+//every method is always public and abstract by default.
+// every variable is public static and final by default.
+
+interface implementation
+=========================
+public class class-name implements interface-name{
+//provide implementation all abstract methods.
+// optional-- non-abstract methods.
+}
+
+extends vs implements
+=====================
+1) a class can extends only one class at a time.
+2) a class can implement any number of interfaces at a time.
+
+example
+=======
+public interface One{
+}
+public interface two{
+}
+
+class Hello implements One,Two{
+}
+
+3) a class can extends a class and can implement Any number of interfaces at a time.
+example:
+========
+public class A{
+}
+interface B{
+}
+interface C{
+}
+
+public class D extends A implements B,C{
+}
+4) an interface can extend any number of interfaces at a time
+
+interface X{
+}
+interface Y{
+}
+interface Z{
+}
+interface A extends X,Y,Z{
+}
+
